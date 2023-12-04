@@ -201,7 +201,7 @@
                 if(urlParams.get('kurikulum')){
                     var kurikulum = "&kurikulum="+urlParams.get('kurikulum');
                 }
-                window.location.replace("http://sks-pens.site/paketKurikulum?prodi="+prodi+kurikulum);
+                window.location.replace(appURL+"/paketKurikulum?prodi="+prodi+kurikulum);
             }) 
             $("#semesterDropDown").change(function() {    
                 var semester = $(this).find(":selected").val();
@@ -210,12 +210,12 @@
                 if(urlParams.get('kurikulum')){
                     var kurikulum = "&kurikulum="+urlParams.get('kurikulum');
                 }
-                window.location.replace("http://sks-pens.site/paketKurikulum?prodi="+urlParams.get('prodi')+"&semester="+semester+kurikulum);
+                window.location.replace(appURL+"/paketKurikulum?prodi="+urlParams.get('prodi')+"&semester="+semester+kurikulum);
             }) 
             $("#kurikulumDropDown").change(function() {    
                 var kurikulum = $(this).find(":selected").val();
                 const urlParams = new URLSearchParams(window.location.search);
-                window.location.replace("http://sks-pens.site/paketKurikulum?prodi="+urlParams.get('prodi')+"&semester="+urlParams.get('semester')+"&kurikulum="+kurikulum);
+                window.location.replace(appURL+"/paketKurikulum?prodi="+urlParams.get('prodi')+"&semester="+urlParams.get('semester')+"&kurikulum="+kurikulum);
             }) 
         });
     </script>

@@ -32,7 +32,11 @@
     <script type="text/javascript" src="http://{{$_SERVER['HTTP_HOST']}}/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="http://{{$_SERVER['HTTP_HOST']}}/js/sidebar/script.js"></script>
     <script src="http://{{$_SERVER['HTTP_HOST']}}/boxicons/boxicons.js"></script>
-      
+    <?php
+        echo "<script type=\"text/javascript\">";
+        echo "var appURL = \"".env("APP_URL", "localhost")."\";";
+        echo "</script>";
+    ?>
     
     @yield('script')
 </body>

@@ -236,7 +236,7 @@
                     <script>
                     $(window).on(\'load\',function(){$(\'#exampleModal\').modal(\'show\');});
                     $(\'#exampleModal\').on(\'hidden.bs.modal\', function () {
-                        window.location.replace(\'http://sks-pens.site/mengajar?prodi=';
+                        window.location.replace(appURL+\'/mengajar?prodi=';
                 echo $request->prodi;
                 echo '&semester=';
                 echo $request->semester;
@@ -250,12 +250,12 @@
             $(document).ready(function(){  
                 $("#prodiDropDown").change(function() {    
                     var prodi = $(this).find(":selected").val();
-                    window.location.replace("http://sks-pens.site/mengajar?prodi="+prodi);
+                    window.location.replace(appURL+"/mengajar?prodi="+prodi);
                 });
                 $("#semesterDropDown").change(function() {    
                     var semester = $(this).find(":selected").val();
                     const urlParams = new URLSearchParams(window.location.search);
-                    window.location.replace("http://sks-pens.site/mengajar?prodi="+urlParams.get('prodi')+"&semester="+semester);
+                    window.location.replace(appURL+"/mengajar?prodi="+urlParams.get('prodi')+"&semester="+semester);
                 });
             });
         </script>

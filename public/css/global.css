@@ -18,7 +18,7 @@
     --text-color: #707070;
     --text-hover-color: #fff;
     --card-color: #FFF;
-    --card-url: url(http://sks-pens.site/img/sidebar/light.png);
+    --card-url: url(/img/sidebar/light.png);
     --total-bg-color: rgb(211, 230, 248);
     --total-color: #000000;
     --scroll-color: #4491DF;
@@ -58,7 +58,7 @@ body.dark{
     --text-color: #ccc;
     --text-hover-color: #ccc;
     --card-color: #242526;
-    --card-url: url(http://sks-pens.site/img/sidebar/dark.png);
+    --card-url: url(/img/sidebar/dark.png);
     --total-bg-color: rgb(25, 26, 26);
     --total-color: #ffffff;
     
